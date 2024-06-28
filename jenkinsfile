@@ -23,7 +23,7 @@ pipeline{
         }
         stage('top'){
             steps{
-                sh "top | head"
+                sh "ps -eaf | head -10"
             }
         }
     }
